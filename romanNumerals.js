@@ -32,6 +32,11 @@ function toRomanLazy(num) {
  return output
 }
 
+// Subtractive principle in Roman Numerals is for example, 
+// placing I before V makes 4 - IV, I before X makes 9, etc...
+// adding the rule in the object I: 1,IV: 4, V: 5 - outputs the special characters
+// as it iterates through object.
+
 function toRoman(num) {
   let romanNumeralToArabic = {
     I: 1,
